@@ -1,7 +1,5 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import {params} from "prop-types"
-// import {useParams, useNavigate} from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 
@@ -51,24 +49,16 @@ const CharacterDetails = (props) => {
             <h1>{character.name}</h1>
             <p>{character.description}</p>
             {/* <p>{character.comics.available}</p> */}
-            {/* <ul>
+            <ul>
                 {character.comics.items.map((comic, index)=> (
                     <li key={index}>{comic.name}</li>
                 ))}
-            </ul> */}
-            {/* {id == null && (
-                <>
-                    <h2>Character Details Page</h2>
-                    <p>Pick the character you want to know more information about on our <Link to='/characters'>Marvel Characters</Link> page.</p>
-                </>
-            )} */}
+            </ul>
             <br />
         </div>
     )
 }
 
-// CharacterDetails.propTypes = {
-//     params: params
-// }
+
 
 export default CharacterDetails;
